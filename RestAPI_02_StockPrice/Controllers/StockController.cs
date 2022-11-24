@@ -32,9 +32,7 @@ namespace RestAPI_02_StockPrice.Controllers
 
 
 
-        // GET https://localhost:7117/api/Stock/AAPL
-        //   or
-        // GET https://localhost:7117/api/Stock?ticker=AAPL       
+        // GET https://localhost:7117/api/Stock/AAPL   
         [HttpGet("{ticker}")]
         public ActionResult<double> GetStockPrice(String ticker)
         {            
